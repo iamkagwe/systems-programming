@@ -1,0 +1,36 @@
+# Documentation files (keep code clean for portfolio)
+*.md
+
+# Ignore compiled binaries
+*.o
+*.a
+*.so
+*.out
+*.exe
+
+# Ignore executables (keep shell, just be specific)
+/*/*/shell
+/*/*/pool
+/*/*/server
+/*/*/cache
+
+# Ignore core dumps
+core
+core.*
+
+# Build artifacts
+*.pyc
+__pycache__/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Debug files
+.gdb_history
+vgcore.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
