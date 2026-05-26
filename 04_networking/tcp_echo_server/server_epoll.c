@@ -108,8 +108,7 @@ int main(void) {
                 struct sockaddr_in client_addr;
                 socklen_t addr_len = sizeof(client_addr);
                 
-                int client_fd = accept(listen_fd, 
-                                      (struct sockaddr *)&client_addr, &addr_len);
+                int client_fd = accept(listen_fd, (struct sockaddr *)&client_addr, &addr_len);
                 if (client_fd < 0) {
                     if (errno == EAGAIN || errno == EWOULDBLOCK) {
                         break;
